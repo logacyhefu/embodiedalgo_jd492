@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "logacyhefu-embodiedalgo_jd492"
+version = "0.1.0"
+description = "按给定权重把总额度分配到各项，报告超分配项与利用率"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "logacyhefu" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://logacyhefu.github.io"
+Repository = "https://github.com/logacyhefu/embodiedalgo_jd492"
+Issues = "https://github.com/logacyhefu/embodiedalgo_jd492/issues"
+
+[project.scripts]
+embodiedalgo_jd492 = "embodiedalgo_jd492:main"
+
+[tool.setuptools]
+py-modules = ["embodiedalgo_jd492"]
